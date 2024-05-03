@@ -1,0 +1,134 @@
+* {
+    font-family: "Eczar", serif;
+    font-weight: 1000;
+    font-style: normal;
+    color: #d2cca1;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 14vh;
+    background-color: #283d3b;
+    color: #d2cca1;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    font-size: 40px;
+    align-items: center;
+    margin-left: 10px;
+}
+
+
+.header-right {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: right;
+    align-items: center;
+}
+
+.header-right li {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-right: 15px;
+}
+
+.header-right button {
+    height: 60%;
+    width: 30%;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: #177e89;
+    border-color: transparent;
+    color: #d2cca1;
+    font-size: 20px;
+}
+
+
+main {
+    background-color: #08605f;
+}
+
+.main-top {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hungry {
+    font-size: 24px;
+    padding-top: 50px;
+}
+
+.search-querys {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+main input {
+    font-size: 24px;
+    width: 25%;
+    margin-right: 10px;
+    border: solid 4px #ffcb77;
+    background-color: #d2cca1;
+    border-radius: 10px;
+    height: 3rem;
+    color: #7c7a7a;
+}
+
+.cuisine {
+    height: 3.6rem;
+    width: 25%;
+    border-radius: 10px;
+    border: none;
+    background-color: #177e89;
+    color: #d2cca1;
+    font-size: 24px;
+    
+}
+
+.search {
+    margin: 15px;
+    width: 15%;
+    height: 2.75rem;
+    background-color: #177e89;
+    color: #d2cca1;
+    border: none;
+    border-radius: 10px;
+    font-size: 24px;
+}
+
+.bottom-mid {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.bottom-mid img{
+    height: 60vh;
+    width: 50%;
+    display: flex;
+}
+
+footer {
+    background-color: #283d3b;
+}
