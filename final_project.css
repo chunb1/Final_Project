@@ -2,7 +2,7 @@
     font-family: "Eczar", serif;
     font-weight: 1000;
     font-style: normal;
-    color: #d2cca1;
+    /* color: #d2cca1; */
     margin: 0;
     padding: 0;
 }
@@ -122,7 +122,7 @@ main input {
 
 .cuisine-options {
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     display: flex;
     text-align: center;
     align-items: center;
@@ -138,29 +138,55 @@ main input {
 .cols {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    border: solid 2px black;
+    width: 100%;
 }
 
-.col1 {
+.col {
     display: flex;
     flex-direction: column;
     color: #7c7a7a;
+    border: solid 2px black;
+    width: 30%;
 }
 
-.col2 {
+.col input {
+    width: 30px;
+    height: 30px;
     display: flex;
-    flex-direction: column;
-    color: #7c7a7a;
+    position: relative;
 }
 
-.col3 {
-    display: flex;
-    flex-direction: column;
-    color: #7c7a7a;
+label {
+    display: block;
+}
+
+
+.one {
+
+}
+
+.two {
+
+}
+
+.three {
+    
 }
 
 .col4 {
     display: flex;
     flex-direction: row;
+    color: #7c7a7a;
+
+}
+
+.col input {
+    border: solid 2px black;
+}
+
+.cuisine-options {
     color: #7c7a7a;
 }
 
@@ -180,9 +206,11 @@ main input {
     width: 38rem;
     display: flex;
     border-radius: 20px;
+    z-index: 0;
 }
 
 footer {
     background-color: #283d3b;
     padding: 3rem 0;
+    z-index: 1;
 }
