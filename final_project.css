@@ -58,12 +58,18 @@ ul {
     font-size: 24px;
 }
 
+.header-right button:hover {
+    cursor: pointer;
+}
+
 
 main {
     background-color: #08605f;
     padding: 2rem 0;
     height: 73vh;
 }
+
+
 
 .main-top {
     position: relative;
@@ -75,6 +81,7 @@ main {
 
 .hungry {
     font-size: 24px;
+    color: #d2cca1;
 }
 
 .search-querys {
@@ -105,8 +112,11 @@ main input {
     border: none;
     background-color: #177e89;
     color: #d2cca1;
-    font-size: 24px;
-    
+    font-size: 24px;    
+}
+
+.cuisine:hover {
+    cursor: pointer;
 }
 
 .search {
@@ -120,9 +130,18 @@ main input {
     font-size: 24px;
 }
 
+.search:hover {
+    cursor: pointer;
+}
+
 .cuisine-options {
     position: absolute;
     z-index: 2;
+    left: 0;
+    right: 0;
+    top: 250px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     text-align: center;
     align-items: center;
@@ -130,7 +149,7 @@ main input {
     background-color: #d2cca1;
     border: solid 4px #ffcb77;
     color: #7c7a7a;
-    width: 60%;
+    width: 550px;
     height: 20rem;
     font-size: 16px;
 }
@@ -147,8 +166,13 @@ main input {
     display: flex;
     flex-direction: column;
     color: #7c7a7a;
-    border: solid 2px black;
     width: 30%;
+}
+
+.cuisine-checkbox {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
 }
 
 .col input {
@@ -156,23 +180,6 @@ main input {
     height: 30px;
     display: flex;
     position: relative;
-}
-
-label {
-    display: block;
-}
-
-
-.one {
-
-}
-
-.two {
-
-}
-
-.three {
-    
 }
 
 .col4 {
@@ -188,6 +195,16 @@ label {
 
 .cuisine-options {
     color: #7c7a7a;
+}
+
+.cuisine-options-background {
+    display: none;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.548);
+    width: 100%;
+    height: 100%;
 }
 
 .main-bottom {
@@ -213,4 +230,31 @@ footer {
     background-color: #283d3b;
     padding: 3rem 0;
     z-index: 1;
+}
+
+
+@media (max-width: 430px){
+
+
+    main {
+        width: 430px;
+    }
+
+    .cuisine-options {
+        width: 400px;
+        height: 250px;
+    }
+
+    .col input {
+        height: 15px;
+        width: 15px;
+    }
+
+    .col {
+        font-size: 12px;
+    }
+
+    .bottom-mid img {
+        width: 420px;
+    }
 }
