@@ -159,7 +159,7 @@ main input {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: solid 2px black;
+    /* border: solid 2px black; */
     width: 100%;
 }
 
@@ -223,7 +223,6 @@ main input {
 .main-bottom {
     position: relative;
     margin: 100px 0;
-
 }
 
 .bottom-mid {
@@ -247,6 +246,10 @@ footer {
 
 
 @media (max-width: 430px){
+
+    header {
+        width: 430px;
+    }
 
     .header-left {
         font-size: 30px
@@ -298,11 +301,15 @@ footer {
     }
 
     .col {
-        font-size: 12px;
-        
+        font-size: 10px;
+        width: 50%;
     }
 
     .bottom-mid img {
         width: 420px;
+    }
+
+    footer {
+        width: 430px;
     }
 }
