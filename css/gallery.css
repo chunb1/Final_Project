@@ -52,9 +52,61 @@ ul {
 main {
     background-color: #08605f;
     padding: 2rem 0;
-    height: 73vh;
+    height: 110vh;
 }
 
+.main-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #d2cca1;
+}
+
+.main-top h1 {
+    font-size: 78px;
+}
+
+.main-top h4 {
+    font-size: 32px;
+}
+
+.main-top hr {
+    width: 95%;
+    background-color: #ffcb77;
+}
+
+.main-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.restaurant-style1 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    margin-left: 10%;
+}
+
+.restaurant-style2 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.restaurant-style1 img {
+    height: 200px;
+}
+
+.restaurant-style2 img {
+    height: 200px;
+}
 
 footer {
     background-color: #283d3b;
