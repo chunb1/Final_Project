@@ -19,16 +19,32 @@
                 <li><a href="./html/about.html">About</a></li>
                 <li><a href="./html/gallery.html">Gallery</a></li>
             </ul>
-            <button>Search</button>
+            <button class="search headerbtn">Search</button>
+            <div class="hamburger-button">
+                <button class="hamburger-button"><i class="hamburger fa-solid fa-bars"></i></button>
+            </div>
         </div>
-    </header>
+    </header>  
+
+
+    <div class="hamburger-menu">
+        <div class="hamburger-option">
+            <a href="html/index.html">About</a>
+        </div>
+        <div class="hamburger-option">
+            <a href="html/monogram.html">Gallery</a>
+        </div>
+        <button class="search headerbtn2">Search</button>
+    </div>
+
 
     <main>
         <div class="main-top">
             <div class="hungry">Hungry? Find a restaurant near you!</div>
             <div class="search-querys">
-                <input type="text" class="City" placeholder="City">
-                <input type="text" class="state" placeholder="State">
+                <div class="query-text">
+                    <p>Showing results for <span class="location">Portland, ME</span></p>
+                </div>
                 <button class="cuisine">Cuisine</button>
             </div>
             <button class="search">Search</button>
@@ -37,68 +53,68 @@
             <div class="cols">
                 <div class="col one">
                     <div class="cuisine-checkbox">
-                        <input type="checkbox" name="African">
+                        <input type="checkbox" name="African" id="checkafrican"> 
                         <label for="African">African</label>
                     </div>
                     <div class="cuisine-checkbox">
-                        <input type="checkbox" name="American">
+                        <input type="checkbox" name="American" id="checkamerican">
                         <label for="American">American</label>
                     </div>
                     <div class="cuisine-checkbox">
-                        <input type="checkbox" name="Asian">
+                        <input type="checkbox" name="Asian" id="checkasian">
                         <label for="Asian">Asian</label>
                     </div>
                     <div class="cuisine-checkbox">
-                        <input type="checkbox" name="Candy">
+                        <input type="checkbox" name="Candy" id="checkcandy">
                         <label for="Candy">Candy</label>
                     </div>
                     <div class="cuisine-checkbox">
-                        <input type="checkbox" name="Creole">
+                        <input type="checkbox" name="Creole" id="checkcreole">
                         <label for="Creole">Creole</label>
                     </div>                    
                 </div>
                 <div class="col two">
                     <div class="cuisine-checkbox">
-                        <input type="checkbox" name="Deli">
+                        <input type="checkbox" name="Deli" id="checkdeli">
                         <label for="Deli">Deli</label>
                     </div>
                     <div class="cuisine-checkbox">
-                        <input type="checkbox" name="Greek">
+                        <input type="checkbox" name="Greek" id="checkgreek">
                         <label for="Greek">Greek</label>
                     </div>
                     <div class="cuisine-checkbox">
-                        <input type="checkbox" name="Hawaiian">
+                        <input type="checkbox" name="Hawaiian" id="checkhawaiian">
                         <label for="Hawaiian">Hawaiian</label>
                     </div>
                     <div class="cuisine-checkbox">
-                        <input type="checkbox" name="Ice Cream">
+                        <input type="checkbox" name="Ice Cream" id="checkicecream">
                         <label for="Ice Cream">Ice Cream</label>
                     </div>
                     <div class="cuisine-checkbox">
-                        <input type="checkbox" name="Indian">
+                        <input type="checkbox" name="Indian" id="checkindian">
                         <label for="Indian">Indian</label>
                     </div>                    
                 </div>
                 <div class="col three">
 
                     <div class="cuisine-checkbox">
-                        <input type="checkbox" name="Italian">
+                        <input type="checkbox" name="Italian" id="checkitalian">
                         <label for="Italian">Italian</label>
                     </div>
                     <div class="cuisine-checkbox">
-                        <input type="checkbox" name="Jamaican">
+                        <input type="checkbox" name="Jamaican" id="checkjamaican">
                         <label for="Jamaican">Jamaican</label>
                     </div>
                     <div class="cuisine-checkbox">
-                        <input type="checkbox" name="Mediterranean">
+                        <input type="checkbox" name="Mediterranean" id="checkmediterranean">
                         <label for="Mediterranean">Mediterranean</label>
                     </div>
                     <div class="cuisine-checkbox">
-                        <input type="checkbox" name="Mexican">
+                        <input type="checkbox" name="Mexican" id="checkmexican">
                         <label for="Mexican">Mexican</label>
                     </div>
                     <div class="cuisine-checkbox">
-                        <input type="checkbox" name="Middle Eastern">
+                        <input type="checkbox" name="Middle Eastern" id="checkmiddleeastern">
                         <label for="Middle Eastern">Middle Eastern</label>
                     </div>
                 </div>
@@ -108,7 +124,511 @@
         <div class="main-bottom">
             <div class="bottom-left"></div>
             <div class="bottom-mid">
-                <img src="./images/location.png" alt="">
+                <img src="./images/location.png" alt="" class="roughlocation">
+                <div class="restaurant-results">
+
+                    <div class="restaurants african">
+                        <div class="cuisine1">
+                            <img src="./images/restaurant_imgs/red-sea-restaurant.png" alt="">
+                            <div class="yap african">
+                                <p>Red Sea</p>
+                                <p>Cuisine: African</p>
+                                <p>30 Washington Ave, Portland, ME</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="restaurants american">
+                        <div class="row one">
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/american-1-restaurant.png" alt="">
+                                <div class="yap american">
+                                    <p>Ferry Village Market</p>
+                                    <p>Cuisine: American</p>
+                                    <p>323 Broadway, South Portland</p>
+                                </div>
+                            </div>
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/american-2-restaurant.png" alt="">
+                                <div class="yap american">
+                                    <p>Coppersmith Tavern and Table</p>
+                                    <p>Cuisine: American</p>
+                                    <p>671 Main St, South Portland</p>
+                                </div>
+                            </div>
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/american-3-restaurant.png" alt="">
+                                <div class="yap american">
+                                    <p>B.Good</p>
+                                    <p>Cuisine: American</p>
+                                    <p>200 Gorham Rd, South Portland</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row two">
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/american-4-restaurant.png" alt="">
+                                <div class="yap american">
+                                    <p>Back Cove BBQ & Pizzeria</p>
+                                    <p>Cuisine: American</p>
+                                    <p>89 Ocean Ave, Portland</p>
+                                </div>
+                            </div>
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/american-5-restaurant.png" alt="">
+                                <div class="yap american">
+                                    <p>The Fries Shop</p>
+                                    <p>Cuisine: American</p>
+                                    <p>364 Maine Mall Road F115, South Portland</p>
+                                </div>
+                            </div>
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/american-6-restaurant.png" alt="">
+                                <div class="yap american">
+                                    <p>Buffalo Wild Wings</p>
+                                    <p>Cuisine: American</p>
+                                    <p>85 Western ave, South Portland</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row three">
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/american-7-restaurant.png" alt="">
+                                <div class="yap american">
+                                    <p>Elevation Burger</p>
+                                    <p>Cuisine: American</p>
+                                    <p>85 Western Ave, South Portland</p>
+                                </div>
+                            </div>
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/american-8-restaurant.png" alt="">
+                                <div class="yap american">
+                                    <p>Black Cow</p>
+                                    <p>Cuisine: American</p>
+                                    <p>83 Exchange St, Portland</p>
+                                </div>
+                            </div>
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/american-9-restaurant.png" alt="">
+                                <div class="yap american">
+                                    <p>Bramhall</p>
+                                    <p>Cuisine: American</p>
+                                    <p>769 Congress St, Portland</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="restaurants asian">
+                        <div class="row one">
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/asian-1-restaurant.png" alt="">
+                                <div class="yap asian">
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/asian-2-restaurant.png" alt="">
+                                <div class="yap asian">
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/asian-3-restaurant.png" alt="">
+                                <div class="yap asian">
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row two">
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/asian-4-restaurant.png" alt="">
+                                <div class="yap asian">
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/asian-5-restaurant.png" alt="">
+                                <div class="yap asian">
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/asian-6-restaurant.png" alt="">
+                                <div class="yap asian">
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row three">
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/asian-7-restaurant.png" alt="">
+                                <div class="yap asian">
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/asian-8-restaurant.png" alt="">
+                                <div class="yap asian">
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/asian-9-restaurant.png" alt="">
+                                <div class="yap asian">
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="restaurants candy">
+                        <div class="row one">
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/candy-1-restaurant.png" alt="">
+                                <div class="yap candy">
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/candy-2-restaurant.png" alt="">
+                                <div class="yap candy">
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/candy-3-restaurant.png" alt="">
+                                <div class="yap candy">
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="restaurants creole">
+                        <div class="cuisine1">
+                            <img src="./images/restaurant_imgs/creole-1-restaurant.png" alt="">
+                            <div class="yap creole">
+                                <p></p>
+                                <p></p>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="restaurants deli">
+                        <div class="row one">
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/deli-1-restaurant.png" alt="">
+                                <div class="yap deli">
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/deli-2-restaurant.png" alt="">
+                                <div class="yap deli">
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/deli-3-restaurant.png" alt="">
+                                <div class="yap deli">
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row two">
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/deli-4-restaurant.png" alt="">
+                                <div class="yap deli">
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/deli-5-restaurant.png" alt="">
+                                <div class="yap deli">
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/deli-6-restaurant.png" alt="">
+                                <div class="yap deli">
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="restaurants greek">
+                        <div class="cuisine1">
+                            <p>No results found</p>
+                        </div>
+                    </div>
+                    <div class="restaurants hawaiian">
+                        <div class="row one">
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/hawaiian-1-restaurant.png" alt="">
+                                <div class="yap hawaiian">
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/hawaiian-2-restaurant.png" alt="">
+                                <div class="yap hawaiian">
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="restaurants ice-cream">
+                        <div class="row one">
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/icecream-1-restaurant.png" alt="">
+                                <div class="yap ice-cream">
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/icecream-2-restaurant.png" alt="">
+                                <div class="yap ice-cream">
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/icecream-3-restaurant.png" alt="">
+                                <div class="yap ice-cream">
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="restaurants indian">
+                        <div class="row one">
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/indian-1-restaurant.png" alt="">
+                                <div class="yap indian">
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/indian-2-restaurant.png" alt="">
+                                <div class="yap indian">
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/indian-3-restaurant.png" alt="">
+                                <div class="yap indian">
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="restaurants italian">
+                        <div class="row one">
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/italian-1-restaurant.png" alt="">
+                                <div class="yap italian">
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/italian-2-restaurant.png" alt="">
+                                <div class="yap italian">
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/italian-3-restaurant.png" alt="">
+                                <div class="yap italian">
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="restaurants jamaican">
+                        <div class="cuisine1">
+                            <img src="./images/restaurant_imgs/jamiacan-1-restaurant.png" alt="">
+                            <div class="yap jamaican">
+                                <p></p>
+                                <p></p>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="restaurants mediterranean">
+                        <div class="row one">
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/mediterranean-1-restaurant.png" alt="">
+                                <div class="yap mediterranean">
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/mediterranean-2-restaurant.png" alt="">
+                                <div class="yap mediterranean">
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="restaurants mexican">
+                        <div class="row one">
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/mexican-1-restaurant.png" alt="">
+                                <div class="yap mexican">
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/mexican-2-restaurant.png" alt="">
+                                <div class="yap mexican">
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/mexican-3-restaurant.png" alt="">
+                                <div class="yap mexican">
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row two">
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/mexican-4-restaurant.png" alt="">
+                                <div class="yap mexican">
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/mexican-5-restaurant.png" alt="">
+                                <div class="yap mexican">
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/mexican-6-restaurant.png" alt="">
+                                <div class="yap mexican">
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="restaurants middle-eastern">
+                        <div class="row one">
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/middleeastern-1-restaurant.jpg" alt="">
+                                <div class="yap middle-eastern">
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/middleeastern-2-restaurant.jpg" alt="">
+                                <div class="yap middle-eastern">
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="cuisine1">
+                                <img src="./images/restaurant_imgs/middleeastern-3-restaurant.jpg" alt="">
+                                <div class="yap middle-eastern">
+                                    <p></p>
+                                    <p></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
             </div>
             <div class="bottom-right"></div>
         </div>
