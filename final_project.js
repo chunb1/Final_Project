@@ -4,12 +4,10 @@ const cuisineBtn = document.querySelector('.cuisine')
 const cuisineBackground = document.querySelector('.cuisine-options-background')
 const applyBtn = document.querySelector('.apply')
 const cuisineOptions = document.querySelector('.cuisine-options')
-const searchBtn = document.querySelector('.search')
+const searchBtn = document.querySelector('.mainbtn')
 const locationImg = document.querySelector('.roughlocation')
-
-
-
-
+const hamburgerFill = document.querySelector('.hamburger-filler')
+const searchBtnTwo = document.querySelector('.headerbtn2')
 
 
 
@@ -33,9 +31,16 @@ const middleeasternOptions = document.querySelector('.middle-eastern')
 hamburgerBtn.addEventListener('click', () => {
     if (optionMenu.style.display == 'none'){
         optionMenu.style.display = 'flex'
+        hamburgerFill.style.display = 'flex'
+        cuisineBackground.style.display = 'flex'
+        searchBtnTwo.style.display = 'flex'
+
     }
     else{
         optionMenu.style.display = 'none'
+        hamburgerFill.style.display = 'none'
+        cuisineBackground.style.display = 'none'
+        searchBtnTwo.style.display = 'none'
     }
 })
 
@@ -79,60 +84,103 @@ applyBtn.addEventListener('click', () => {
 })
 
 
-function checked() {
-
-}
 
 
 searchBtn.addEventListener('click', () => {
 
-    locationImg.style.display = 'none'
+    // locationImg.style.display = 'none'
 
     if (document.getElementById('checkafrican').checked){
         africanOptions.style.display = 'block'
-    } 
+        locationImg.style.display = 'none'
+    } else {
+        africanOptions.style.display = 'none'
+    }
     if (document.getElementById('checkamerican').checked){
         americanOptions.style.display = 'block'
+        locationImg.style.display = 'none'
+    } else {
+        americanOptions.style.display = 'none'
     }
     if (document.getElementById('checkasian').checked){
         asianOptions.style.display = 'block'
+        locationImg.style.display = 'none'
+    } else {
+        asianOptions.style.display = 'none'
     }
     if (document.getElementById('checkcandy').checked){
         candyOptions.style.display = 'block'
+        locationImg.style.display = 'none'
+    } else {
+        candyOptions.style.display = 'none'
     }
     if (document.getElementById('checkcreole').checked){
         creoleOptions.style.display = 'block'
+        locationImg.style.display = 'none'
+    } else {
+        creoleOptions.style.display = 'none'
     }
     if (document.getElementById('checkdeli').checked){
         deliOptions.style.display = 'block'
+        locationImg.style.display = 'none'
+    } else {
+        deliOptions.style.display = 'none'
     }
     if (document.getElementById('checkgreek').checked){
         greekOptions.style.display = 'block'
+        locationImg.style.display = 'none'
+    } else {
+        greekOptions.style.display = 'none'
     }
     if (document.getElementById('checkhawaiian').checked){
         hawaiianOptions.style.display = 'block'
+        locationImg.style.display = 'none'
+    } else {
+        hawaiianOptions.style.display = 'none'
     }
     if (document.getElementById('checkicecream').checked){
         icecreamOptions.style.display = 'block'
+        locationImg.style.display = 'none'
+    } else {
+        icecreamOptions.style.display = 'none'
     }
     if (document.getElementById('checkindian').checked){
         indianOptions.style.display = 'block'
+        locationImg.style.display = 'none'
+    } else {
+        indianOptions.style.display = 'none'
     }
     if (document.getElementById('checkitalian').checked){
         italianOptions.style.display = 'block'
+        locationImg.style.display = 'none'
+    } else {
+        italianOptions.style.display = 'none'
     }
     if (document.getElementById('checkjamaican').checked){
         jamaicanOptions.style.display = 'block'
+        locationImg.style.display = 'none'
+    } else {
+        jamaicanOptions.style.display = 'none'
     }
     if (document.getElementById('checkmediterranean').checked){
         mediterraneanOptions.style.display = 'block'
+        locationImg.style.display = 'none'
+    } else {
+        mediterraneanOptions.style.display = 'none'
     }
     if (document.getElementById('checkmexican').checked){
-        americanOptions.style.display = 'block'
+        mexicanOptions.style.display = 'block'
+        locationImg.style.display = 'none'
+    } else {
+        mexicanOptions.style.display = 'none'
     }
     if (document.getElementById('checkmiddleeastern').checked){
         middleeasternOptions.style.display = 'block'
+        locationImg.style.display = 'none'
+    } else {
+        middleeasternOptions.style.display = 'none'
     }
+    
 })
 
 
