@@ -200,6 +200,9 @@ main {
 }
 
 footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: #283d3b;
     padding: 3rem 0;
     z-index: 1;
